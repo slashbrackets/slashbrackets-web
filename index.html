@@ -1,72 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Software Engineering Skills</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #1f1f1f;
-            padding: 1em;
-            text-align: center;
-        }
-        h1, h2 {
-            color: #bb86fc;
-        }
-        a {
-            color: #03dac6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 2em;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 0.5em 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Britt Johnson - Software Engineer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>My Software Engineering Skills</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Primary Technologies</h2>
-            <ul>
-                <li>C#</li>
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Angular</li>
-                <li>Node.js</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Other Technologies</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>SQL</li>
-                <!-- Add more technologies here -->
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>© 2022 Your Name</p>
-    </footer>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold">Britt Johnson</h1>
+      <p class="mt-2">Sr. Lead Software Engineer</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 mt-8">
+    <section id="bio">
+      <h2 class="text-2xl font-semibold">About Me</h2>
+      <p class="mt-4">
+        With over 20 years of experience as a Software Architect and Lead Software Engineer, I have developed a strong skill set in designing and developing cutting-edge engineering solutions across a broad range of technologies. My expertise in full-stack development enables me to build interactive and user-centric (UX) application designs that can scale to meet your needs. As a solutions architect, I have a proven track record in designing and developing complex applications and providing comprehensive solutions. Additionally, I possess exceptional technology management and communication skills to effectively lead and collaborate with cross-functional teams.
+      </p>
+    </section>
+
+    <section id="experience" class="mt-12">
+      <h2 class="text-2xl font-semibold">Professional Experience</h2>
+      
+      <div class="mt-6">
+        <h3 class="text-xl font-bold">Wells Fargo Advisors / Glenn Allen VA</h3>
+        <p class="text-gray-600">Sr. Lead Software Engineer (Feb 2013–Present)</p>
+        <ul class="list-disc list-inside mt-2">
+          <li>Provide expert leadership and design guidance for the development of complex financial applications within the brokerage line of business.</li>
+          <li>Led a geographically dispersed team of developers responsible for developing tools, frameworks, and components used by the developer community across 180+ business applications.</li>
+          <li>Develop numerous UX components using core technologies such as Typescript, JavaScript, Node.js, NPM, and Angular.</li>
+          <li>Develop numerous middle-tier web services and microservice .Net components using C#, LINQ, and Entity Framework.</li>
+          <li>Define UX development standards, tooling, and provide guidance that leverages modern technologies and tools across the brokerage organization for multiple development teams.</li>
+          <li>Manage Git source code repositories, including branch management, code reviews, and approving and merging pull requests.</li>
+          <li>Lead the UX application development community to advance UX patterns and improve the competency of developers across the organization.</li>
+          <li>Play a key role as a UX lead on many web and mobile applications.</li>
+        </ul>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="text-xl font-bold">Fiserv (Capital One) / Henrico VA</h3>
+        <p class="text-gray-600">Solutions Architect (Feb 2008–Jan 2013)</p>
+        <ul class="list-disc list-inside mt-2">
+          <li>Architect and design ASP.Net solutions for various business needs with a focus on performance, scalability, extensibility, and security.</li>
+          <li>Develop SOA web services using .Net and C# to provide enterprise-wide integration with various sub-systems.</li>
+          <li>Lead a team of technical staff overseeing their management and progress on deliverables.</li>
+          <li>Consult with clients on enterprise solutions, reviewing requirements, and providing approvals while producing and delivering application design artifacts to clients.</li>
+          <li>Design, construct, and implement time-critical and data-sensitive processes using ASP.Net and C#.</li>
+          <li>Facilitate ASP.Net and C# code inspections and design reviews while mentoring development leads and other developers on software development best practices.</li>
+          <li>Provide a level of effort for various business requirements and give direct input into establishing large and/or complex project goals, milestones, and timetables.</li>
+          <li>Ensure that projects are properly estimated, thoroughly planned, and have sufficient risk mitigation measures in place.</li>
+        </ul>
+      </div>
+
+      <!-- Additional experience sections can be added similarly -->
+
+    </section>
+
+    <section id="skills" class="mt-12">
+      <h2 class="text-2xl font-semibold">Skills</h2>
+      <div class="mt-6 grid grid-cols-2 gap-4">
+        <div>
+          <h3 class="text-xl font-bold">Technical Skills</h3>
+          <ul class="list-disc list-inside mt-2">
+            <li>Microservices</li>
+            <li>OOP</li>
+            <li>UML/Modeling</li>
+            <li>System Design & Architecture</li>
+            <li>C#</li>
+            <li>.Net /.Net Core</li>
+            <li>Typescript / JavaScript</li>
+            <li>HTML5/CSS3</li>
+            <li>Node.js</li>
+            <li>Angular/Material/CLI</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Tools & Technologies</h3>
+          <ul class="list-disc list-inside mt-2">
+            <li>Npm</li>
+            <li>Git / GitHub</li>
+            <li>Jenkins</li>
+            <li>Artifactory</li>
+            <li>NuGet</li>
+            <li>SQL / NoSQL</li>
+            <li>Powershell</li>
+            <li>Cloud / Azure / Firebase</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-6 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 Britt Johnson</p>
+      
+    </div>
+  </footer>
+
 </body>
 </html>
