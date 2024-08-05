@@ -19,7 +19,7 @@
       color: #4299e1;
     }
     h1, h2, h3 {
-      color: #cbd5e0;
+      color: #f6ad55;
     }
     .list-disc {
       list-style-type: disc;
@@ -29,13 +29,29 @@
       margin-left: 0;
     }
     header {
-      background: linear-gradient(90deg, #1a202c, #2d3748);
+      background: linear-gradient(90deg, #2c5282, #2b6cb0);
     }
     footer {
-      background: linear-gradient(90deg, #2d3748, #1a202c);
+      background: linear-gradient(90deg, #2b6cb0, #2c5282);
     }
     .container {
       padding: 1rem;
+    }
+    .card {
+      background: #2d3748;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+    }
+    .skills-list li {
+      background: #4a5568;
+      border-radius: 4px;
+      padding: 0.5rem;
+      margin: 0.25rem 0;
+    }
+    .skills-list li:nth-child(odd) {
+      background: #5a67d8;
     }
   </style>
 </head>
@@ -51,15 +67,17 @@
   <main class="container mx-auto px-4 mt-8">
     <section id="bio">
       <h2 class="text-3xl font-semibold">About Me</h2>
-      <p class="mt-4 text-lg">
-        With over 20 years of experience as a Software Architect and Lead Software Engineer, I have developed a strong skill set in designing and developing cutting-edge engineering solutions across a broad range of technologies. My expertise in full-stack development enables me to build interactive and user-centric (UX) application designs that can scale to meet your needs. As a solutions architect, I have a proven track record in designing and developing complex applications and providing comprehensive solutions. Additionally, I possess exceptional technology management and communication skills to effectively lead and collaborate with cross-functional teams.
-      </p>
+      <div class="card">
+        <p class="mt-4 text-lg">
+          With over 20 years of experience as a Software Architect and Lead Software Engineer, I have developed a strong skill set in designing and developing cutting-edge engineering solutions across a broad range of technologies. My expertise in full-stack development enables me to build interactive and user-centric (UX) application designs that can scale to meet your needs. As a solutions architect, I have a proven track record in designing and developing complex applications and providing comprehensive solutions. Additionally, I possess exceptional technology management and communication skills to effectively lead and collaborate with cross-functional teams.
+        </p>
+      </div>
     </section>
 
     <section id="experience" class="mt-12">
       <h2 class="text-3xl font-semibold">Professional Experience</h2>
       
-      <div class="mt-6">
+      <div class="card mt-6">
         <h3 class="text-2xl font-bold">Wells Fargo Advisors / Glenn Allen VA</h3>
         <p class="text-gray-500">Sr. Lead Software Engineer (Feb 2013–Present)</p>
         <ul class="list-disc list-inside mt-2 text-lg">
@@ -74,7 +92,7 @@
         </ul>
       </div>
 
-      <div class="mt-6">
+      <div class="card mt-6">
         <h3 class="text-2xl font-bold">Fiserv (Capital One) / Henrico VA</h3>
         <p class="text-gray-500">Solutions Architect (Feb 2008–Jan 2013)</p>
         <ul class="list-disc list-inside mt-2 text-lg">
@@ -98,7 +116,7 @@
       <div class="mt-6 grid grid-cols-2 gap-4">
         <div>
           <h3 class="text-2xl font-bold">Technical Skills</h3>
-          <ul class="list-disc list-inside mt-2 text-lg">
+          <ul class="skills-list mt-2 text-lg">
             <li>Microservices</li>
             <li>OOP</li>
             <li>UML/Modeling</li>
@@ -113,7 +131,7 @@
         </div>
         <div>
           <h3 class="text-2xl font-bold">Tools & Technologies</h3>
-          <ul class="list-disc list-inside mt-2 text-lg">
+          <ul class="skills-list mt-2 text-lg">
             <li>Npm</li>
             <li>Git / GitHub</li>
             <li>Jenkins</li>
@@ -131,7 +149,7 @@
   <footer class="py-6 mt-12">
     <div class="container mx-auto px-4 text-center">
       <p>&copy; 2024 Britt Johnson</p>
-      <P><a href="https://linkedin.com/in/d-britt-johnson" target="_blank" class="text-blue-400">LinkedIn</a></p>
+      <p><a href="https://linkedin.com/in/d-britt-johnson" target="_blank" class="text-blue-400">LinkedIn</a></p>
     </div>
   </footer>
 
